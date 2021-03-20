@@ -1,7 +1,5 @@
 package edu.isu.cs2263.Visitor;
 
-import java.util.Set;
-
 public class PrintingVisitor implements Visitor{
     private RelationshipNetwork network;
 
@@ -17,7 +15,5 @@ public class PrintingVisitor implements Visitor{
         return involvedPeople[0].getName() + " " + relationship.toString() + " " + involvedPeople[1].getName();
     }
 
-    public void visit(Relationship rel){
-
-    }
+    public void visit(Relationship rel) {}
 }

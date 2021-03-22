@@ -44,7 +44,7 @@ public class CountingVisitor implements Visitor{
                 case "is married to":
                     typeCounts[3]++;
                     break;
-                case "goes to school with":
+                case "attends school with":
                     typeCounts[4]++;
                     break;
                 default:

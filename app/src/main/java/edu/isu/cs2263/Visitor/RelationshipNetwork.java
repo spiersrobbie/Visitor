@@ -19,19 +19,19 @@ public class RelationshipNetwork {
         Relationship rel;
         switch (relationshipType) {
             case "Marriage":
-                rel = new Marriage();
+                rel = new Marriage(p1.getName(), p2.getName());
                 break;
             case "BloodRelationship":
-                rel = new BloodRelationship();
+                rel = new BloodRelationship(p1.getName(), p2.getName());
                 break;
             case "Colleagueship":
-                rel = new Colleagueship();
+                rel = new Colleagueship(p1.getName(), p2.getName());
                 break;
             case "Friendship":
-                rel = new Friendship();
+                rel = new Friendship(p1.getName(), p2.getName());
                 break;
             case "Peership":
-                rel = new Peership();
+                rel = new Peership(p1.getName(), p2.getName());
                 break;
             default:
                 System.out.println("Relationship type " + relationshipType + " is not interpretable by the graph. Please use a different relationship definition.");

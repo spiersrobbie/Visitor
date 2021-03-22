@@ -9,3 +9,5 @@
 
 rootProject.name = 'Visitor'
 include('app')
+include 'gson:2.8.6'
+

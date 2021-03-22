@@ -1,17 +1,17 @@
+// Subclass and type of Relationship. This is for two married people
+
 package edu.isu.cs2263.Visitor;
 
 public class Marriage extends Relationship{
-    private String marriageDate;
-    private int happiness;
+    private String person1Name;
+    private String person2Name;
+
+    public Marriage(String person1, String person2){
+        person1Name = person1;
+        person2Name = person2;
+    }
 
     public Marriage(){}
-
-    public Marriage(String date, int happiness) {
-        marriageDate = date;
-        this.happiness = happiness;
-    }
-    public String getMarriageDate() {return marriageDate;}
-    public int getHappiness() {return happiness;}
 
     public String toString(){
         return "is married to";

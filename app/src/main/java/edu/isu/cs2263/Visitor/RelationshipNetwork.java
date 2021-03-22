@@ -1,3 +1,5 @@
+// RelationshipNetwork is a data structure which holds our graph (network) and provides a layer of abstraction from the graph itself, only offering a few methods
+
 package edu.isu.cs2263.Visitor;
 
 import com.google.common.graph.EndpointPair;
@@ -15,6 +17,7 @@ public class RelationshipNetwork {
 
     public RelationshipNetwork(){}
 
+    // This method populates an edge between two Person and parses the relationshipType into one of the Relationship subclasses
     public void addEdge(Person p1, Person p2, String relationshipType){
         Relationship rel;
         switch (relationshipType) {
@@ -41,19 +44,23 @@ public class RelationshipNetwork {
         graph.addEdge(p1, p2, rel);
     }
 
+    // Returns a set of all the relationships in the graph
     public Set<Relationship> getRelationships(){
         return graph.edges();
     }
 
+    // Returns a set of all the people (nodes) in the graph
     public Set<Person> getPeople(){
         return graph.nodes();
     }
 
+    // For a particular pair of people, returns the relationship between them
     public Person[] getPersonPair(Relationship rel){
         EndpointPair<Person> people = graph.incidentNodes(rel);
         return new Person[]{people.nodeU(), people.nodeV()};
     }
 
+    // Implementation of the visitor design pattern
     public void accept(Visitor v){
         v.visit(this);
     }

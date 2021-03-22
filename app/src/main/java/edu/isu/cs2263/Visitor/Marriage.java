@@ -1,3 +1,5 @@
+// Subclass and type of Relationship. This is for two married people
+
 package edu.isu.cs2263.Visitor;
 
 public class Marriage extends Relationship{

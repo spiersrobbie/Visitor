@@ -1,3 +1,5 @@
+// Subclass of the relationship, this one is a familiar relationship, that is, they are related by blood
+
 package edu.isu.cs2263.Visitor;
 
 public class BloodRelationship extends Relationship{

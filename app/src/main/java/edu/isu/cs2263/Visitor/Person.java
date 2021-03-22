@@ -1,3 +1,5 @@
+// General class for the people (nodes) in this network. Note that for this implementation only names are used, however one could modify the Application class and include more information about the People
+
 package edu.isu.cs2263.Visitor;
 
 public class Person {

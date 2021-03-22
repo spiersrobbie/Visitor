@@ -1,3 +1,5 @@
+// Subclass and type of Relationship. This is for two friends
+
 package edu.isu.cs2263.Visitor;
 
 public class Friendship extends Relationship{

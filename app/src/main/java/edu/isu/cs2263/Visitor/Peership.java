@@ -1,3 +1,5 @@
+// Subclass and type of Relationship. This one is for two people who attend school together
+
 package edu.isu.cs2263.Visitor;
 
 public class Peership extends Relationship{

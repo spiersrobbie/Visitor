@@ -1,3 +1,5 @@
+// This is our second visitor. It visits the RelationshipNetwork and counts the number of occurrences of each relationship type
+
 package edu.isu.cs2263.Visitor;
 
 public class CountingVisitor implements Visitor{
@@ -6,8 +8,9 @@ public class CountingVisitor implements Visitor{
 
     public void visit(RelationshipNetwork net){
         this.network = net;
-    }
+    }       // Only saves the network to its memory for usage in displayCounts()
 
+    // Counts the number of occurrences of each relationship, then displays it in a convenient table
     public String displayCounts(){
         int[] counts = getCounts();
 
@@ -28,7 +31,9 @@ public class CountingVisitor implements Visitor{
         return output;
     }
 
+    // Does the counting of the relationships
     private int[] getCounts(){
+        // It is relevant to note that an enum would be much more appropriate here, however not necessary
         int[] typeCounts = new int[5];
         for(Relationship rel: network.getRelationships()){
             switch(rel.toString()){

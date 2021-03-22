@@ -1,3 +1,5 @@
+// Subclass and type of Relationship, this one is for two people who work together
+
 package edu.isu.cs2263.Visitor;
 
 public class Colleagueship extends Relationship{

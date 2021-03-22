@@ -1,3 +1,5 @@
+// This is our first visitor. It visits the RelationshipNetwork and formats a specific relationship into a string
+
 package edu.isu.cs2263.Visitor;
 
 public class PrintingVisitor implements Visitor{
